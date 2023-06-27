@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="logo-notext.png">
+    <title>Sign Up | Cinema Seats</title>
+
+    <style>
+        body {
+            background-image: initial;
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Image Logo -->
+    <div class="log"><a href="index.php"><img src="logo.png" alt=""></a></div>
+
+    <!-- Sign Up content -->
+    <div class="signup-cont">
+    <div class="signup-container">
+        <div class="signup-content">
+                    <h3><i class="fa fa-user-plus" aria-hidden="true"></i>
+                        Admin Signing Up</h3> 
+
+                        <!-- This form will be send to signup.php page notice its "action" -->
+                     <form action="admin-signup.php" method="POST">
+
+                     
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" placeholder="Type your email here" name="email" style="background-color: #333333; color: #8c8c8c;" required><br><br>
+                        <label for="usename">Username:</label><br>
+                        <input type="text" id="username" placeholder="Type a username" name="user" style="background-color: #333333; color: #8c8c8c;" required><br><br>
+              
+                        
+                        <label for="pass">Password:</label><br>
+                        <input type="password" id="pass" name="password" minlength="10" style="background-color: #333333; color: #8c8c8c;" required><br><br>
+                        
+                        <br>
+                    <input type="submit" name="save" value="Create Admin" class="submit">
+                    <br><br>
+                     </form>
+                    </div>
+                </div>
+            </div>
+            </body>
+            </html>

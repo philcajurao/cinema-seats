@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("home-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/*HOME PAGE*/
+/*NAVIGATION BAR*/
+.nav-bar ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:transparent;
+    width: 75%;
+    padding: 11px;
+    float: left;
+}
+.nav-bar li {
+    float: right;
+}
+.nav-bar li a {
+    text-decoration: none;
+    color: White;
+    padding: 20px 30px 20px;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+.logo {
+    width: 25%;
+    float: left;
+}
+.logo img {
+    width: 100px;
+    margin: 17px 50px 10px;
+    height: auto;
+}
+
+
+
+/*WELCOME*/
+.welcome {
+    border-bottom: 8px solid #222;
+    line-height: 2;
+} 
+.welcome-content {
+    padding: 190px 0px 180px;
+    color: white;
+}
+.pic {
+    width: 100%;
+}
+.pic span {
+    width: 50%;
+}
+.pic img {
+    width: 300px;
+    height: auto;
+}
+
+
+
+
+/*HOMEPAGE CONTENT*/
+.content {
+    background-color: black;
+    color: white;
+    padding: 0;
+}
+.content h2 {
+    padding: 20px 0px 30px;
+}
+
+.first-come-first-serve {
+    padding: 50px 100px;
+    border-bottom: 8px solid #222;
+    font-size: 30px;
+}
+.first-come-first-serve::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.first-come-first-serve img {
+    width:350px;
+    border-radius: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+.free-popcorn {
+    padding: 50px 100px;
+    border-bottom: 8px solid #222;
+    font-size: 30px;
+}
+.free-popcorn::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.free-popcorn img {
+    width: 350px;
+    border-radius: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+.family-discount {
+    padding: 50px 100px;
+    border-bottom: 8px solid #222;
+    font-size: 30px;
+}
+.family-discount::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.family-discount img {
+    width: 350px;
+    border-radius: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="column"] {
+      width: 100%;
+      font-size: 20px;
+      padding-bottom: 50px;
+    }
+    [class*="content"] {
+        text-align: center;
+      }
+}
+
+
+/* LOGIN PAGE */
+.log {
+    width: 100%;
+}
+.log img {
+    width: 100%;
+    max-width: 170px;
+    margin: auto;
+    display: block;
+    padding: 17px;
+}
+.log-container {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0px 15px 20px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: slide 3s;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+.login-content {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.login-content form {
+    margin-top: 30px;
+    padding: 0px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.login-content input {
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+}
+.login-content label {
+    padding-bottom: 5px;
+}
+.login-title {
+    width: 100%;
+    padding: 0px 50px 20px 50px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.login-title h3 {
+    color: white;
+    font-size: 40px;
+}
+.login-title-content {
+    top: 30px;
+    position: relative;
+    text-align: center;
+}
+.others {
+    text-align: center;
+    margin: 5px 0px 20px 0px;
+}
+.others a {
+    text-decoration: none;
+}
+.submit {
+    position: relative;
+    font-size: 17px;
+    padding: 7px; 
+    color: white;
+    background: #F42222;
+    cursor: pointer;
+    border: 1px solid #0000004d;
+    width: 100%;
+}
+
+
+/* SIGNUP PAGE */
+.signup-cont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;    
+    color: white;
+
+}
+.signup-container {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    box-shadow: 0px 15px 20px 10px rgba(0,0,0,0.2);
+    top: 10%;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: slide 3s;
+    background-color: rgba(0,0,0,0.8);
+}
+.signup-content {
+    padding: 20px 30px 0px 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+.signup-content form {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 0px 20px 0px 20px;
+}
+.signup-content input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    margin-top: 5px;
+}
+.signup-title {
+    width: 100%;
+    margin: auto;
+}
+.signup-content h3 {
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+}
+@keyframes slide {
+    0% {transform: translateX(-200%);box-shadow: 0px 70px 20px 10px rgba(0,0,0,0.2);}
+    50% {transform: translateX(5%);box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);}
+    100% {transform: translateX(0%);box-shadow: 0px 15px 20px 10px rgba(0,0,0,0.2);}
+}
+
+
+/*ABOUT PAGE*/
+.nav-bar-about {
+    background: black;
+    height: 80px;
+}
+.about-content {
+    margin: 25px 100px 70px 100px;
+    padding: 0;
+}
+.about-content h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #F42222;
+    font-weight: bold;
+}
+.about-content ul {
+    list-style-type: none;
+}
+.about-content li {
+    padding: 5px 0px 25px 30px;
+    border-left: 5px solid #F42222;
+}
+
+
+
+
+
+/*CONTACTS*/
+.contacts {
+    color: #757575;
+    background-color: #222;
+    padding: 20px 100px 10px;
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+}
+.contacts h4 {
+    padding-bottom: 10px;
+}
+.contacts h4 a {
+    text-decoration: none;
+    color: #757575;
+}
+.contacts h4 a:hover {
+    text-decoration: underline;
+}
+.contacts ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.contacts li {
+    display: inline-block;
+    padding-right: 10px;
+}
+.contacts li a {
+    text-decoration: none;
+    color: #757575; 
+}
+.contacts li a:hover {
+    text-decoration: underline;
+}
+
+
+/*FOOTER*/
+.footer {
+    color: #757575;
+    text-align: center;
+    background-color: #222;
+    padding: 10px 0px 10px;
+    font-size: 13px;
+}
